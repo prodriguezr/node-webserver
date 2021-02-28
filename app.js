@@ -6,7 +6,7 @@ const hbs = require('hbs');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.HTTP_PORT;
+const port = process.env.PORT;
 
 // middlewares
 app.use(morgan('dev'));
