@@ -16,6 +16,7 @@ app.set('view engine', 'hbs');
 
 hbs.registerPartials(__dirname + '/views/partials', function (err) {});
 
+/*
 app.get('/', (req, res) => {
     res.render('home', {
         name: 'Pablo Rodríguez',
@@ -36,9 +37,10 @@ app.get('/elements', (req, res) => {
         title: 'Curso de Node'
     });
 });
+*/
 
 app.get('*', (req, res) => {
-    res.sendFile(__dirname + '/public/404.html');
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.listen(port , () => {
